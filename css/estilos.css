@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    margin-top: 5px;
+    margin-left: 8px;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+a{
+    font-size: 1em;
+    outline: none;
+    text-decoration: none;
+}
+a:hover{
+    color: #6998AB;
+    border-bottom: 1px solid #6998AB;
+}
+.navPagina{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    position: fixed;
+    z-index: 99;
+}
+.tituloNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.containerLi{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.item{
+    margin-right: 30px;
+}
+.registroUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+.bt-menu{
+    display: none;
+}
+
+h3{
+    margin-top: 6px;
+    font-size: 1em;
+    margin-left: 4px;
+}
+.containerPadre{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/close-up-of-microphone-on-concert-stage-with-beautiful-lighting.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerLeft{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom-right-radius: 80%;
+    border-top-right-radius: 80%;
+    background-color: #D1D1D1;
+}
+.containerH1{
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+}
+.infoPrincipal{
+    font-size: 3em;
+    color: #6998AB;
+}
+.containerRight{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+span{
+    font-size: 1.6em;
+    color: #1A374D;
+    font-weight: 800;
+}
+.row{
+    box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.81);
+    -webkit-box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.81);
+    -moz-box-shadow: 0px 4px 17px 0px rgba(0,0,0,0.81);
+}
+.containerButton{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    width: 50%;
+    height: 40%;
+    background-color: rgb(64, 104, 130, 0.9);
+}
+.button{
+    width: 50%;
+    height: 30%;
+    border: none;
+    border-radius: 5%;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.button:hover{
+    border: 1px solid #1A374D;
+    background-color: #B1D0E0;
+}
+.infoContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 900px;
+}
+.containerCanciones{
+    width: 100%;
+    height: 600px;
+}
+h6{
+    font-size: 1.5em;
+}
+
+.containerInfoRight{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1000px;
+    justify-content: space-around;
+}
+.infoTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+   
+}
+
+.burbuja1{
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #D1D1D1; 
+    border-right: 100px solid transparent;
+}
+.burbuja2{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #D1D1D1;
+}
+.burbuja3{
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #D1D1D1; 
+    border-left: 100px solid transparent; 
+}
+.containerGrid{
+    display: grid;
+    background-color: rgb(26, 55, 77,0.7);
+    grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+    grid-template-rows: repeat(auto-fill,minmax(100px,1fr));
+    grid-gap: 20px;
+    width: 90%;
+    max-height: 600px;
+    padding: 5px;
+    border-radius: 15px;
+}
+.img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    filter: brightness(50%) blur(1px);
+}
+.img:hover{
+    filter: brightness(100%) blur(0);
+    cursor: pointer;
+}
+.grid1{
+    background-color: transparent;
+}
+.grid2{
+    background-color: transparent;
+}
+.grid3{
+    background-color: transparent;
+}
+.grid4{
+    background-color: transparent;
+}
+.grid5{
+    background-color: transparent;
+}
+.grid6{
+    background-color: transparent;
+}
+.grid7{
+    background-color: transparent;
+}
+.grid8{
+    background-color: transparent;
+}
+.contactContainer{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,1fr);
+    padding: 10px;
+}
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-right: 1px solid #D1D1D1;
+}
+.gmail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    border-top: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+}
+.map{
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end:5;
+    margin: auto;
+}
+.contenedorFooter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 1.6em;
+    z-index: 2;
+}
+@media screen and (max-width:620px){
+    .containerPadre{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerLeft{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border-radius: 0;
+        margin-top: 80px;
+    }
+    .containerH1{
+        justify-content: center;
+        align-items: center;
+        font-weight:  800;
+    }
+    .containerRight{
+        display: flex;
+        height: 100%;
+    }
+    .containerButton{
+        margin-top: 100px;
+        width: 90%;
+        height: 30%;
+    }
+    .h6Music{
+        font-size: 1em;
+    }
+    .labelContact{
+        font-size: 1em;
+        font-weight: 700;
+    }
+    .numberContact{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .containerGrid{
+        grid-template-columns: repeat(auto-fill, minmax(180px,1fr));
+        grid-template-rows: repeat(auto-fill,minmax(180px,1fr));
+    }
+}
+@media screen and (max-width: 770px){
+    .navPagina{
+        width: 100%;
+        height: 80px;
+    }
+    .containerLi{
+        flex-direction: column;
+        background-color: #2f373b;
+        margin:0;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 40px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.4s;
+    }
+    li{
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    .bt-menu{
+        display: block;
+        border: none;
+        background-color: #1A374D;
+    }
+    .menu_visible{
+        left: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .contactContainer{
+        width: 100%;
+    }
+    .numberContact{
+        font-size: 12px;
+    }
+    .texto{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:360px){
+    .texto{
+        font-size: 14px;
+    }
+}

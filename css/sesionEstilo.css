@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    bottom: 0;
+}
+main{
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    margin-top: 5px;
+    margin-left: 8px;
+    font-size: 2.2em;
+    font-weight: 500;
+}
+a{
+    font-size: 1em;
+    outline: none;
+    text-decoration: none;
+    transition: 0.9s;
+}
+a:hover{
+    color: #6998AB;
+    border-bottom: 1px solid #6998AB;
+}
+.navPagina{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+}
+.tituloNav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.containerLi{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.item{
+    margin-right: 30px;
+}
+.registroUser{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 150px;
+    height: 45px;
+    cursor: pointer;
+}
+.bt-menu{
+    display: none;
+}
+
+.classH3{
+    margin-top: 6px;
+    font-size: 1em;
+    margin-left: 4px;
+}
+
+.contenedorPadre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+}
+.containerForm{
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+}
+.footerContainer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.error{
+    color: #ff0000;
+}
+.texto{
+    font-size: 1.4em;
+}
+@media screen and (max-width: 770px){
+    .navPagina{
+        width: 100%;
+        height: 80px;
+    }
+    .containerLi{
+        flex-direction: column;
+        background-color: #2f373b;
+        margin:0;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 40px 0;
+        height: calc(100% - 60px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.4s;
+    }
+    li{
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
+    .bt-menu{
+        display: block;
+        border: none;
+        background-color: #1A374D;
+    }
+    .menu_visible{
+        left: 0;
+    }
+}
+@media screen and (max-width:433px) {
+    .texto{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:300px) {
+    .texto{
+        font-size: 0.8em;
+    }
+}

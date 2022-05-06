@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=2.5">
+    <title>Canciones</title>
+    <link rel="stylesheet" href="./css/estiloCanciones.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body class="bg-info">
+    <header class="header">
+        <nav class="navPagina bg-primary">
+            <div class="tituloNav">
+                <img src="./images/logo.png" alt="">
+                <h1 class="tituloH1 text-secondary">OYE</h1>
+            </div>
+            <ul class="containerLi menu_visible">
+                <li><a href="index.html" class="text-danger item text-decoration-none">Inicio</a></li>
+                <li><a href="sesion.html" class="text-danger item text-decoration-none">Inicio de sesion</a></li>
+                <div class="registroUser rounded-pill bg-danger" onclick="registro()"> 
+                    <img src="./images/person.svg" alt="BootstrapUser" width="32" height="32">
+                    <h3 class="textoH3 text-primary">Registro</h3>
+                </div>
+            </ul>
+            <button class="bt-menu">
+                <img src="./images/list.svg" alt="" width="50" height="50">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="containerBuscador">
+                <div class="buscador">
+                    <form class="row g-3 w-100">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text rounded-circle" id="inputGroupPrepend"><img src="./images/music-note-list.svg" alt="BootstrapUser" width="20" height="20"></span>
+                            <input type="text" onkeyup="buscador()" class="form-control rounded-pill" id="buscadorVer" aria-describedby="inputGroupPrepend" placeholder="buscar canciones">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section id="mySection">
+            <div class="containerInfo">
+                <div class="card" style="width: 20rem; height: 300px;">
+                    <img src="./images/music-note-list.svg" class="card-img-top bg-danger" alt="musica" width="100" height="130">
+                    <div class="card-body p-1">
+                        <h5 class="card-title d-flex justify-content-center mb-4" id="h5-buscador">konga</h5>
+                        <audio class="audio" src="./audios/audio1.mp3" controls></audio>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem; height: 300px;">
+                    <img src="./images/music-note-list.svg" class="card-img-top bg-danger" alt="musica" width="100" height="130">
+                    <div class="card-body p-1">
+                        <h5 class="card-title d-flex justify-content-center mb-4" id="h5-buscador">palta</h5>
+                        <audio class="audio" src="./audios/audio2.mp3" controls></audio>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem; height: 300px;">
+                    <img src="./images/music-note-list.svg" class="card-img-top bg-danger" alt="musica" width="100" height="130">
+                    <div class="card-body p-1">
+                        <h5 class="card-title d-flex justify-content-center mb-4" id="h5-buscador">acdc</h5>
+                        <audio class="audio" src="./audios/audio3.mp3" controls></audio>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem; height: 300px;">
+                    <img src="./images/music-note-list.svg" class="card-img-top bg-danger" alt="musica" width="100" height="130">
+                    <div class="card-body p-1">
+                        <h5 class="card-title d-flex justify-content-center mb-4" id="h5-buscador">kiss</h5>
+                        <audio class="audio" src="./audios/audio1.mp3" controls></audio>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem; height: 300px;">
+                    <img src="./images/music-note-list.svg" class="card-img-top bg-danger" alt="musica" width="100" height="130">
+                    <div class="card-body p-1">
+                        <h5 class="card-title d-flex justify-content-center mb-4" id="h5-buscador">cielo</h5>
+                        <audio class="audio" src="./audios/audio2.mp3" controls></audio>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem; height: 300px;">
+                    <img src="./images/music-note-list.svg" class="card-img-top bg-danger" alt="musica" width="100" height="130">
+                    <div class="card-body p-1">
+                        <h5 class="card-title d-flex justify-content-center mb-4" id="h5-buscador">corazon</h5>
+                        <audio class="audio" src="./audios/audio3.mp3" controls></audio>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <div class="preFooter">
+            <div class="preLeft "></div>
+            <div class="preRight "></div>
+        </div>
+        <footer>
+            <div class="footer bg-primary">
+                <p class="text-danger ">Derechos reservados</p>
+            </div>
+        </footer>
+    </main>   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

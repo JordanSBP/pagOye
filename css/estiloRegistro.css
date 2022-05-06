@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 1;
+    transition: 0.7s;
+}
+header.abajo{
+        background: #1A374D;
+}
+.containerHeader{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    font-family: 'Roboto Mono', monospace;
+    z-index: 1;
+    transition: 0.7s;
+    
+}
+
+main{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.navRegistro{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.containerLiRegistro{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+li{
+    margin: 20px;
+    padding-right: 10px;
+    list-style-type: none;
+}
+a{
+    font-size: 1em;
+    font-weight: 600;
+    outline: none;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: 1px solid #1A374D;
+}
+p{
+    font-size: 1em;
+}
+
+.contenedorPadre{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
+}
+.contenedorImg{
+    height: 100vh;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flecha{
+    display: none;
+}
+.containerForm{
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    height: 100vh;
+    padding: 10px;
+}
+.button{
+    width: 100%;
+}
+.error{
+    color: red;
+    padding: 4px;
+}
+
+@media screen and (max-width:769px) {
+
+    .contenedorPadre{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .contenedorImg{
+        background-attachment: fixed;
+    }
+    .navRegistro{
+        justify-content: center;
+        width: 100%;
+    }
+    .flecha{
+        display: block;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        font-size: 2em;
+        color: #1b1c1c;
+        animation-duration: 3s;
+        animation-name: flechaMover;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+    }
+    @keyframes flechaMover{
+        50%{
+            top: 75%;
+        }
+        100%{
+            top: 80%;
+        }
+    }
+
+    
+}
